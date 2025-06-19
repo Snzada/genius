@@ -1,54 +1,66 @@
 <html>
+
 <head>
-<title> Jogo Genius! </title>
-<link rel="stylesheet" href="style.css">
+  <title> Jogo Genius! </title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1> <p style="text-align: center;"> BEM VINDO AO GENIUS! </p> </h1> <!--Centralizei o texto-->
-<h4> <p style="text-align: center;"> Aperte em "INICIAR" quando sentir que está pronto </p> </h4> <!--Centralizei o texto-->
+  <h1>
+    <p style="text-align: center;"> BEM VINDO AO GENIUS! </p>
+  </h1> <!--Centralizei o texto-->
+  <h4>
+    <p style="text-align: center;"> Aperte em "INICIAR" quando sentir que está pronto </p>
+  </h4> <!--Centralizei o texto-->
 
-<div id="jogo">
- <div class="botão verde"></div>
- <div class="botão vermelho"></div>
- <div class="botão amarelo"></div>
- <div class="botão azul"></div>
-</div>
+  <div id="jogo">
+    <div class="botão verde"></div>
+    <div class="botão vermelho"></div>
+    <div class="botão amarelo"></div>
+    <div class="botão azul"></div>
+  </div>
 
-<div id="pontos" > <br> <br> <br> <br> 
-<h3> <p style="text-align: right;"> PONTUAÇÃO: <span id="ponto">0</span> </p></h3> <!--id de pontos, quantos pontos o jogador fez-->
-</div>
+  <div id="pontos"> <br> <br> <br> <br>
+    <h3>
+      <p style="text-align: right;"> PONTUAÇÃO: <span id="ponto">0</span> </p>
+    </h3> <!--id de pontos, quantos pontos o jogador fez-->
+  </div>
 
-<div id="botoes">
-<p style="text-align: center;"> <button id="startButton"> <h1> INICIAR </h1> </button> </p> <!--Aumentei o tamanho do texto "iniciar" e centralizei no meio da ganina o botão-->
-<button id="creditosButton"> CRÉDITOS </button> <br> <br>
-<button id="resetButton"> RESETAR </button> 
-</div> <br> <br> <br> <br>
+  <div id="botoes">
+    <p style="text-align: center;"> <button id="startButton">
+        <h1> INICIAR </h1>
+      </button> </p> <!--Aumentei o tamanho do texto "iniciar" e centralizei no meio da ganina o botão-->
+    <button id="creditosButton"> CRÉDITOS </button> <br> <br>
+    <button id="resetButton"> RESETAR </button>
+  </div> <br> <br> <br> <br>
 
 
-<!--formulário para deixar um feedback-->
-<section id="formulario" style="text-align: center; margin-top: 60px; padding: 20px; background-color: #f0f0f0;">
-  <h2>Deixe seu feedback!</h2>
-  <form id="feedbackForm">
-    <label for="nome">Nome:</label><br>
-    <input type="text" id="nome" name="nome" required><br><br>
+  <!--formulário para deixar um feedback-->
+  <section id="formulario" style="text-align: center; margin-top: 60px; padding: 20px; background-color: #f0f0f0;">
+    <h2>Deixe seu feedback!</h2>
+    <form id="feedbackForm">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
 
-    <label for="email">E-mail (opcional):</label><br>
-    <input type="email" id="email" name="email"><br><br>
+      <label for="email">E-mail (opcional):</label><br>
+      <input type="email" id="email" name="email"><br><br>
 
-    <label for="comentario">O que achou do jogo?</label><br>
-    <textarea id="comentario" name="comentario" rows="4" cols="40" required></textarea><br><br>
+      <label for="comentario">O que achou do jogo?</label><br>
+      <textarea id="comentario" name="comentario" rows="4" cols="40" required></textarea><br><br>
 
-    <button type="submit">Enviar Feedback</button>
-  </form>
+      <button type="submit">Enviar Feedback</button>
+    </form>
 
-  <p id="mensagem-enviada" style="color: green; display: none;">Obrigado pelo feedback!</p>
-</section>
+    <p id="mensagem-enviada" style="color: green; display: none;">Obrigado pelo feedback!</p>
+  </section>
 
-<!--Usei o "footer" que serve pra mostrar um texto no final da pagina-->
-<footer style="text-align: center; margin-top: 30px;"> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-    <p> &copy; 2025 - Equipe do GrauTecnico - Alunos: Yasmin, Marcus, Sanderson, Reginaldo, Ezequiel | Professora: Luana Morais </p>
-</footer>
+  <!--Usei o "footer" que serve pra mostrar um texto no final da pagina-->
+  <footer style="text-align: center; margin-top: 30px;"> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    <p> &copy; 2025 - Equipe do GrauTecnico - Alunos: Yasmin, Marcus, Sanderson, Reginaldo, Ezequiel | Professora: Luana
+      Morais </p>
+  </footer>
 
 </body>
+
 </html>
