@@ -25,3 +25,38 @@ p {
     color: green; 
     display: none;
 }
+
+#verde, #vermelho, #amarelo, #azul {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#verde {
+    background-color: green;
+}
+
+#vermelho {
+    background-color: red;
+}
+
+#amarelo {
+    background-color: yellow;
+}
+
+#azul {
+    background-color: blue;
+}
+
+#verde:active,
+#vermelho:active,
+#amarelo:active,
+#azul:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
