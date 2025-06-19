@@ -8,11 +8,11 @@
 <body>
 
   <h1>
-    <p style="text-align: center;"> BEM VINDO AO GENIUS! </p>
-  </h1> <!--Centralizei o texto-->
+    <p> BEM VINDO AO GENIUS! </p>
+  </h1> 
   <h4>
-    <p style="text-align: center;"> Aperte em "INICIAR" quando sentir que está pronto </p>
-  </h4> <!--Centralizei o texto-->
+    <p> Aperte em "INICIAR" quando sentir que está pronto </p>
+  </h4>
 
   <div id="jogo">
     <div class="botão verde"></div>
@@ -23,21 +23,19 @@
 
   <div id="pontos"> <br> <br> <br> <br>
     <h3>
-      <p style="text-align: right;"> PONTUAÇÃO: <span id="ponto">0</span> </p>
-    </h3> <!--id de pontos, quantos pontos o jogador fez-->
+    <p class="rank"> PONTUAÇÃO: <span id="ponto">0</span> </p>
+    </h3>
   </div>
 
   <div id="botoes">
-    <p style="text-align: center;"> <button id="startButton">
-        <h1> INICIAR </h1>
-      </button> </p> <!--Aumentei o tamanho do texto "iniciar" e centralizei no meio da ganina o botão-->
-    <button id="creditosButton"> CRÉDITOS </button> <br> <br>
-    <button id="resetButton"> RESETAR </button>
+    <p> <button class="buttons"> INICIAR </button> </p>
+    <button class="buttons"> CRÉDITOS </button> <br> <br>
+    <button class="buttons"> RESETAR </button>
   </div> <br> <br> <br> <br>
 
 
-  <!--formulário para deixar um feedback-->
-  <section id="formulario" style="text-align: center; margin-top: 60px; padding: 20px; background-color: #f0f0f0;">
+  
+  <section>
     <h2>Deixe seu feedback!</h2>
     <form id="feedbackForm">
       <label for="nome">Nome:</label><br>
@@ -52,14 +50,8 @@
       <button type="submit">Enviar Feedback</button>
     </form>
 
-    <p id="mensagem-enviada" style="color: green; display: none;">Obrigado pelo feedback!</p>
+    <p id="mensagem-enviada">Obrigado pelo feedback!</p>
   </section>
-
-  <!--Usei o "footer" que serve pra mostrar um texto no final da pagina-->
-  <footer style="text-align: center; margin-top: 30px;"> <br> <br> <br> <br> <br> <br> <br> <br> <br>
-    <p> &copy; 2025 - Equipe do GrauTecnico - Alunos: Yasmin, Marcus, Sanderson, Reginaldo, Ezequiel | Professora: Luana
-      Morais </p>
-  </footer>
 
 </body>
 

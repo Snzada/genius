@@ -2,14 +2,26 @@ body {
     background-color: lightsteelblue;
 }
 
-#startButton {
+p {
+    text-align: center;
+}
+
+.rank {
+    text-align: right;
+}
+
+.buttons {
     background-color: lightblue;
 }
 
-#creditosButton {
-    background-color: lightblue;
+#feedbackForm {
+    text-align: center; 
+    margin-top: 60px; 
+    padding: 20px; 
+    background-color: #f0f0f0;
 }
 
-#resetButton {
-    background-color: lightblue;
+#mensagem-enviada {
+    color: green; 
+    display: none;
 }
