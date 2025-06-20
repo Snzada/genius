@@ -3,6 +3,7 @@
 <head>
   <title> Jogo Genius! </title>
   <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
@@ -28,11 +29,12 @@
   </div>
 
   <div id="botoes">
-    <p> <button class="buttons"> INICIAR </button> </p>
-    <button class="buttons"> CRÉDITOS </button> <br> <br>
-    <button class="buttons"> RESETAR </button>
+    <p> <button class="buttons" id="btnStart"> INICIAR </button> </p>
+    <button class="buttons" id="btnCreditos"> CRÉDITOS </button> <br> <br>
+    <button class="buttons" id="btnReset"> RESETAR </button>
   </div> <br> <br> <br> <br>
-
+<p id="msg"></p>
+  <p id="creditos">Feito por </p>
 
   
   <section>
@@ -47,12 +49,12 @@
       <label for="comentario">O que achou do jogo?</label><br>
       <textarea id="comentario" name="comentario" rows="4" cols="40" required></textarea><br><br>
 
-      <button type="submit">Enviar Feedback</button>
+      <button id="botao">Enviar Feedback</button>
     </form>
 
     <p id="mensagem-enviada">Obrigado pelo feedback!</p>
   </section>
-
+<script src="script.js" defer></script>
 </body>
 
 </html>
