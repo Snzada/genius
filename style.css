@@ -1,26 +1,3 @@
-body {
-    background-color: lightsteelblue;
-}
-
-p {
-    text-align: center;
-}
-
-.rank {
-    text-align: right;
-}
-
-.buttons {
-    background-color: lightblue;
-}
-
-#feedbackForm {
-    text-align: center; 
-    margin-top: 60px; 
-    padding: 20px; 
-    background-color: #f0f0f0;
-}
-
 #mensagem-enviada {
     color: green; 
     display: none;
@@ -58,5 +35,5 @@ p {
 #amarelo:active,
 #azul:active {
     transform: scale(0.95);
-    opacity: 0.8;
+    opacity: 0.8;
 }
