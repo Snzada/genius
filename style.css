@@ -1,39 +1,64 @@
+body {
+    background-color: lightsteelblue;
+}
+
+p {
+    text-align: center;
+}
+
+.rank {
+    text-align: right;
+}
+
+.buttons {
+    background-color: lightblue;
+}
+
+#feedbackForm {
+    text-align: center; 
+    margin-top: 60px; 
+    padding: 20px; 
+    background-color: #f0f0f0;
+}
+
 #mensagem-enviada {
     color: green; 
     display: none;
 }
 
-#verde, #vermelho, #amarelo, #azul {
+.botão {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    display: inline-block;
-    margin: 10px;
+    display: inline-flex;
+    margin: 100px;
     border: 3px solid black;
     cursor: pointer;
     transition: transform 0.1s;
+    margin-left: 250px;
+    margin-bottom: -100px;
+
+
 }
 
-#verde {
+.verde {
     background-color: green;
+   
 }
 
-#vermelho {
+.vermelho {
     background-color: red;
 }
 
-#amarelo {
+.amarelo {
     background-color: yellow;
 }
 
-#azul {
+.azul {
     background-color: blue;
 }
 
-#verde:active,
-#vermelho:active,
-#amarelo:active,
-#azul:active {
+.botão:active {
     transform: scale(0.95);
     opacity: 0.8;
 }
