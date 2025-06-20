@@ -3,7 +3,7 @@
     display: none;
 }
 
-#verde, #vermelho, #amarelo, #azul {
+.botão {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -14,26 +14,23 @@
     transition: transform 0.1s;
 }
 
-#verde {
+.verde {
     background-color: green;
 }
 
-#vermelho {
+.vermelho {
     background-color: red;
 }
 
-#amarelo {
+.amarelo {
     background-color: yellow;
 }
 
-#azul {
+.azul {
     background-color: blue;
 }
 
-#verde:active,
-#vermelho:active,
-#amarelo:active,
-#azul:active {
+.botão:active {
     transform: scale(0.95);
     opacity: 0.8;
 }
