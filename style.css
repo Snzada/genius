@@ -1,64 +1,115 @@
 body {
-    background-color: lightsteelblue;
+    background: linear-gradient(135deg, #3c144d 0%, #9b6eb4 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h4 {
+    color: #0001;
+    text-shadow: 1px 2px 8px #fff8, 0 1px 0 #ffffff3b;
+    margin-top: 20px;
 }
 
 p {
     text-align: center;
+    color: #000000;
+    font-size: 1.1em;
 }
 
 .rank {
     text-align: right;
+    color: #444;
+    font-weight: bold;
 }
 
 .buttons {
-    background-color: lightblue;
+    background: linear-gradient(90deg, #cc0c8c 0%, #9874b1 100%);
+    color: #222;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 28px;
+    font-size: 1.1em;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #0002;
+    margin: 8px 4px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+.buttons:hover {
+    background: linear-gradient(90deg, #66a6ff 0%, #89f7fe 100%);
+    transform: translateY(-2px) scale(1.04);
 }
 
 #feedbackForm {
     text-align: center; 
     margin-top: 60px; 
-    padding: 20px; 
-    background-color: #f0f0f0;
+    padding: 24px; 
+    background: rgba(110, 15, 110, 0.733);
+    border-radius: 12px;
+    box-shadow: 0 20px 16px rgba(0, 0, 0, 0.829);
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #mensagem-enviada {
-    color: green; 
+    color: #1b8a1b; 
     display: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 10px;
 }
 
-.botão {
-    width: 150px;
-    height: 150px;
+.botao {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     display: inline-block;
-    margin: 100px;
-    border: 3px solid black;
+    margin: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px #0001;
     cursor: pointer;
-    transition: transform 0.1s;
-    margin-left: 250px;
-    margin-bottom: -100px;
-
-
+    transition: transform 0.1s, box-shadow 0.2s, filter 0.2s;
+    vertical-align: middle;
+    filter: brightness(0.95) saturate(1.2);
 }
 
 .verde {
-    background-color: green;
-   
+    background-color: #4caf50;
 }
 
 .vermelho {
-    background-color: red;
+    background-color: #f44336;
 }
 
 .amarelo {
-    background-color: yellow;
+    background-color: #ffeb3b;
 }
 
 .azul {
-    background-color: blue;
+    background-color: #2196f3;
 }
 
-.botão:active {
+.botao:active {
     transform: scale(0.95);
-    opacity: 0.8;
+    opacity: 0.8;
+    box-shadow: 0 1px 4px #0002;
+    filter: brightness(1.1) saturate(1.4);
+}
+
+#genius-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: 40px auto;
+  width: max-content;
+  background: rgba(189, 7, 119, 0.144);
+  border-radius: 18px;
+  box-shadow: 0 13px 29px rgba(0, 0, 0, 0.822);
+  padding: 32px 36px;
 }

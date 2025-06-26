@@ -1,10 +1,10 @@
 // Variáveis
 const cores = ['verde', 'vermelho', 'amarelo', 'azul'];
 const botoes = {
-  verde: document.querySelector('.botão.verde'),
-  vermelho: document.querySelector('.botão.vermelho'),
-  amarelo: document.querySelector('.botão.amarelo'),
-  azul: document.querySelector('.botão.azul')
+  verde: document.querySelector('.botao.verde'),
+  vermelho: document.querySelector('.botao.vermelho'),
+  amarelo: document.querySelector('.botao.amarelo'),
+  azul: document.querySelector('.botao.azul')
 };
 
 const btnStart = document.getElementById('btnStart');
@@ -22,6 +22,11 @@ let sequenciaJogador = [];
 let rodada = 0;
 let podeJogar = false;
 
+btnStart.addEventListener(`click`, () => {
+  msg.textContent = `jogo iniciado! Boa sorte!`;
+  iniciarJogo();
+});
+
 // esconde créditos e mensagem de feedback
 creditos.style.display = 'none';
 mensagemEnviada.style.display = 'none';
@@ -30,7 +35,7 @@ mensagemEnviada.style.display = 'none';
 btnCreditos.addEventListener('click', () => {
   if (creditos.style.display === 'none') {
     creditos.style.display = 'block';
-    creditos.textContent = 'Feito por ';
+    creditos.textContent = 'Feito por: Kacio - Ezequiel - Sanderson - Reginaldo - Marcos = Yasmin';
   } else {
     creditos.style.display = 'none';
   }
@@ -130,3 +135,7 @@ function resetarJogo() {
     msg.textContent = 'Jogo resetado! Clique em "INICIAR" para começar.';
   }, 1500);
 }
+
+btnReset.addEventListener('click', () => {
+  resetarJogo();
+});
