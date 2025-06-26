@@ -30,7 +30,7 @@ mensagemEnviada.style.display = 'none';
 btnCreditos.addEventListener('click', () => {
   if (creditos.style.display === 'none') {
     creditos.style.display = 'block';
-    creditos.textContent = 'Feito por ';
+    creditos.textContent = 'Feito por Yasmin, Marcus, Sanderson, Reginaldo, Ezequiel e Kacio';
   } else {
     creditos.style.display = 'none';
   }
