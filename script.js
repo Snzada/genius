@@ -35,8 +35,7 @@ mensagemEnviada.style.display = 'none';
 btnCreditos.addEventListener('click', () => {
   if (creditos.style.display === 'none') {
     creditos.style.display = 'block';
-    creditos.textContent = 'Feito por: Kacio - Ezequiel - Sanderson - Reginaldo - Marcos = Yasmin';
-    creditos.textContent = 'Feito por Yasmin, Marcus, Sanderson, Reginaldo, Ezequiel e Kacio';
+    creditos.textContent = 'Feito por: Kacio - Ezequiel - Sanderson - Reginaldo - Marcos - Yasmin';
   } else {
     creditos.style.display = 'none';
   }
